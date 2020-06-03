@@ -15,8 +15,11 @@ class Decrement extends Component {
   render() {
     return (
       <div ID="center">
-        {this.state.number}{" "}
-        <button onClick={() => this.decrementHandler(this.state)}>
+        <span className="badge badge-primary m-2">{this.state.number}</span>
+        <button
+          className=" btn btn-secondary btn-sm"
+          onClick={() => this.decrementHandler(this.state)}
+        >
           Decrement
         </button>
       </div>
